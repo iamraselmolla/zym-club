@@ -1,0 +1,9 @@
+1. have to save break time in localstorage 
+2. make folder well arranged, props need to destructure.
+3. have to commit minimum 10 times
+4. have to show toast after clicked button activity completed
+
+some quesrions:
+1. how does react works.
+2. difference between props and state
+3. without dataload which works useffect does
