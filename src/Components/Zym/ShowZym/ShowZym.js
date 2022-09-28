@@ -5,8 +5,8 @@ const ShowZym = (props) => {
     console.log(props)
     const {img, name, age, description, time} = props.zym;
 let newDes;
-    if(description.length>17){
-       const splitDes =  description.split(' ').slice(0,18).join(' ')
+    if(description.length>12){
+       const splitDes =  description.split(' ').slice(0,11).join(' ')
         newDes = splitDes + '.......'
     }else{
         newDes = description;

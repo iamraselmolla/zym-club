@@ -3,4 +3,10 @@
     padding: 30px;
     display: grid;
     grid-template-columns: 75% 25%;
+    box-sizing: border-box;
+}
+.zym-calculation{
+    position: relative;
+    background-color: #fff;
+    padding: 20px 15px;
 }

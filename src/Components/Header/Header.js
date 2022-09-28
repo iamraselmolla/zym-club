@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header>
             <div className="main-header">
-                <img src={logo} width='200px' alt="" />
+                <img src={logo} width='100px' alt="" />
                 <h1 className="logo-tag-line">
                     Zym Club
                 </h1>

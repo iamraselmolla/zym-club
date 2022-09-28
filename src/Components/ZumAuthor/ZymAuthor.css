@@ -1,0 +1,92 @@
+.author-info{
+    position: sticky;
+    top: 0;
+}
+.zym-info-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.body-strcuture{
+    padding: 10px;
+    background-color: #f2f4fa;
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.body-weight{
+    color: #a9b6c9;
+    margin: 0;
+}
+.height{
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+.weight{
+    color: #6b6e7b;margin: 0;
+}
+.author-name-address h4{
+    margin: 0;
+
+}
+.author-name-address small{
+    
+    color: #a9b6c9;
+}
+.break-section{
+    margin: 0 0 20px 0;
+}
+.break{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #f2f4fa;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+.break-time{
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bolder;
+}
+.break-heading,
+.exercise-heading{
+    margin: 0 0 10px 0;
+}
+.total-exercise-time,
+.total-break-time{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f4fa;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+.total-exercise-time h5,
+.total-break-time h5{
+    margin: 0;
+}
+.total-exercise-time p,
+.total-break-time p{
+    margin: 0;
+}
+.activity-completed-btn{
+        width: 100%;
+        border: none;
+        color: #fff;
+        background-color: blue;
+        padding: 20px 0;
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+    
+}
