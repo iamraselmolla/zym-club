@@ -3,13 +3,7 @@ import './ZymAuthor.css'
 
 
 const ZymAuthor = () => {
-    const [calTime, setCalTime] = useState([]);
-    const calTotalTime = getTime => {
-        setCalTime(getTime)
-
-    console.log(calTime)
-}
-
+ 
     return (
         <div className='author-info'>
             <div className="author-details flex">

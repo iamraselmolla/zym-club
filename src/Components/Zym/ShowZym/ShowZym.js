@@ -1,14 +1,16 @@
 import React from 'react';
 import './ShowZym.css'
+let totalTime = [];
+const calTotalTime = (getTime,e) => {
+    totalTime.push(parseInt(getTime))
+    const totalCalculateTime = totalTime.reduce((pre,curr) => pre + curr);
 
-const chnageBtntxt = (e) => {
+    document.getElementById('exercise-time').textContent = totalCalculateTime;
     if(e.target.classList.contains('addlistbtn')){
-        e.target.innerText = 'Added';
-        e.target.classList.add('added-list');
-        e.target.setAttribute('disable', true)
+        e.target.textContent = 'Added';
     }
-    
 }
+
 const ShowZym = (props) => {
     const {img, name, age, description, time} = props.zym;
 let newDes;
@@ -25,7 +27,7 @@ let newDes;
             <p>{newDes}</p>
             <h5>For age: <b> {age}</b></h5>
             <h5>Time require: <b> {time}s</b></h5>
-            <button onClick={(e) => chnageBtntxt(e)} className='addlistbtn'>Add to List</button>
+            <button onClick={(e) => calTotalTime(time,e)} className='addlistbtn'>Add to List</button>
         </div>
     );
 };
