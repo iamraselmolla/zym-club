@@ -1,6 +1,5 @@
 .zym-container{
     width: 100%;
-    padding: 30px;
     display: grid;
     grid-template-columns: 75% 25%;
     box-sizing: border-box;
@@ -9,4 +8,7 @@
     position: relative;
     background-color: #fff;
     padding: 20px 15px;
+}
+.zym-info-container{
+    padding: 50px 0;
 }

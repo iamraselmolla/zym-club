@@ -9,10 +9,10 @@ const Zym = () => {
         fetch('zym.json')
         .then(res=> res.json())
         .then(data => setZym(data))
-    },[])
+    },[]);
     return (
         <div className='zym'>
-            {zym.map(singleZym => <ShowZym key={singleZym.name} zym ={singleZym}></ShowZym>)}
+            {zym.map(singleZym => <ShowZym  key={singleZym.name} zym ={singleZym}></ShowZym>)}
         </div>
     );
 };

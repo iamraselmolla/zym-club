@@ -2,6 +2,11 @@
     position: sticky;
     top: 0;
 }
+.author-img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 .zym-info-container{
     width: 85%;
     margin: 0 auto;

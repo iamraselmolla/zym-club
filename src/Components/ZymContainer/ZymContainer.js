@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../Header/Header';
 import ZymAuthor from '../ZumAuthor/ZymAuthor';
 import Zym from '../Zym/Zym';
 import './ZymContainer.css'
@@ -8,6 +9,8 @@ const ZymContainer = () => {
         <div className='zym-container'>
             <div className="zym-info">
                <div className="zym-info-container">
+                <Header></Header>
+                <h2> Select today’s exercise</h2>
                <Zym></Zym>
                </div>
             </div>
