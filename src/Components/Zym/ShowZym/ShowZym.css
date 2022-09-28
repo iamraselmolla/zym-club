@@ -1,0 +1,25 @@
+.zym-details img{
+    width: 100%;
+    border-radius: 15px;
+}
+.zym-details{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.zym-details h5{
+    font-weight: inherit;
+    margin: 10px 0;
+}
+.zym-details h4{
+    margin: 10px 0 0px 0;
+}
+.addlistbtn{
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: blue;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 18px;
+}

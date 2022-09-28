@@ -1,0 +1,6 @@
+.zym-container{
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}

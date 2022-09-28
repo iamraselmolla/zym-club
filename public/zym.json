@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Dumble",
+      "img": "./dumble.jpg",
+      "description": "If you feel like you can keep going after 12-15 repetitions of one exercise with dumbbells, your weight is too light. The goal is that you should barely be able to finish the last repetition.",
+      "age": "20-25",
+      "time": 30
+    },
+    {
+      "name": "Weight Lifting",
+      "img": "./weight-lifting.jpg",
+      "description": "Strength training can help you manage or lose weight, and it can increase your metabolism to help you burn more calories. Enhance your quality of life. Strength training may enhance your quality of life and improve your ability to do everyday activities.",
+      "age": "15-30",
+      "time": 40
+    },
+    {
+      "name": "Chest up-down",
+      "img": "./push-up.webp",
+      "description": "1. Increases muscle thickness · 2. Contributes to upper-body strength output · 3. Improves posture.",
+      "age": "30-50",
+      "time": 50
+    },
+    {
+      "name": "Run",
+      "img": "./run.jpg",
+      "description": "help to build strong bones, as it is a weight bearing exercise.strengthen muscles.improve cardiovascular fitness.burn plenty of kilojoules.help maintain a healthy weight.",
+      "age": "35-50",
+      "time": 55
+    },
+    {
+      "name": "Swimming",
+      "img": "./swimming.jpeg",
+      "description": "keeps your heart rate up but takes some of the impact stress off your body.builds endurance, muscle strength and cardiovascular fitness.",
+      "age": "20-25",
+      "time": 45
+    },
+    {
+      "name": "Cycling",
+      "img": "./cycling.jpeg",
+      "description": "increased cardiovascular fitness. increased muscle strength and flexibility.improved joint mobility. ",
+      "age": "20-50",
+      "time": 25
+    },
+    {
+      "name": "Side planks.",
+      "img": "./side-plank.png",
+      "description": "Side planks work the deep spinal stabilizing muscle quadratus lumborum . Keeping this muscle strong can help reduce your risk of a back injury. Strengthens your core without stressing your back. Unlike crunches and situps, side planks dont put pressure on your lower back",
+      "age": "20-40",
+      "time": 60
+    }
+  ]
