@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ShowZym.css'
 
-
+let newTimeDB;
 const ShowZym = (props) => {
-    const [times, setTime] = useState('10');
+    useEffect(() => {
+        const getTimeDB = localStorage.getItem('break-time');
+       
+        if(getTimeDB){
+             newTimeDB = getTimeDB.split('').slice(0,2).join('')
+        }else{
+            newTimeDB = 10
+        }
+    }, [])
+    const [times, setTime] = useState(newTimeDB);
 
     let totalTime = [];
 const calTotalTime = (getTime,e) => {

@@ -19,7 +19,7 @@ const showBreakTime = e => {
         if(getTimeFromDB){
           newTime= getTimeFromDB.split('').slice(0,2).join('')
         }
-        document.getElementById('break-time-seconds').innerText = newTime;
+       setNewTime(newTime);
 
     }else{
         e.target.classList.remove('added')
@@ -68,7 +68,7 @@ const showBreakTime = e => {
                 </div>
                 <div className="total-break-time">
                 <h5>Break</h5>
-                    <p><span id='break-time-seconds'></span> Seconds</p>
+                    <p><span id='break-time-seconds'>{newTime}</span> Seconds</p>
                 </div>
             </div>
             <button className='activity-completed-btn'>Activity Completed</button>
