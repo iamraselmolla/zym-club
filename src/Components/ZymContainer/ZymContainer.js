@@ -10,7 +10,7 @@ const ZymContainer = () => {
             <div className="zym-info">
                <div className="zym-info-container">
                 <Header></Header>
-                <h2> Select today’s exercise</h2>
+                <h2 className='text-white'> Select today’s exercise</h2>
                <Zym></Zym>
                </div>
             </div>

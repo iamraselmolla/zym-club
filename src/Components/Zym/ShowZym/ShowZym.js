@@ -11,6 +11,7 @@ const ShowZym = (props) => {
         document.getElementById('exercise-time').textContent = totalCalculateTime;
         if(e.target.classList.contains('addlistbtn')){
             e.target.textContent = 'Added';
+            e.target.parentNode.classList.add('added-exercise');
         }
     }
     const {img, name, age, description, time} = props.zym;

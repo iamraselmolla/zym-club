@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const ZymAuthor = () => {
-    const viewToast = () => toast('Hello', {position: toast.POSITION.TOP_CENTER})
+    const viewToast = () => toast('Exercise Completed', {position: toast.POSITION.TOP_CENTER})
 
 
     let getItem = localStorage.getItem('break-time');
@@ -41,7 +41,7 @@ const showBreakTime = e => {
                     <small>Bagerhat, Bangladesh</small>
                 </div>
             </div>
-            <div className="body-strcuture">
+            <div className="body-strcuture text-white">
                 <div>
                     <p className='body-weight'><span className='height'>60</span>KG</p>
                     <p className='weight'>Weight</p>
@@ -68,8 +68,8 @@ const showBreakTime = e => {
                     Exercise Details
                 </h4>
                 <div className="total-exercise-time">
-                    <h5>Exerciste Time</h5>
-                    <p><span id='exercise-time'>100</span> Seconds</p>
+                    <h5>Exercise Time</h5>
+                    <p><span id='exercise-time'>0</span> Seconds</p>
                 </div>
                 <div className="total-break-time">
                 <h5>Break</h5>

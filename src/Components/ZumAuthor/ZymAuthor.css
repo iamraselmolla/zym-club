@@ -16,12 +16,13 @@
 }
 .body-strcuture{
     padding: 10px;
-    background-color: #f2f4fa;
+    background-color: #000;
 
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
     margin: 20px 0;
+    border: solid 3px cyan;
 }
 .body-weight{
     color: #a9b6c9;
@@ -30,10 +31,10 @@
 .height{
     font-weight: 500;
     font-size: 30px;
-    color: #000;
+    color: #fff;
 }
 .weight{
-    color: #6b6e7b;margin: 0;
+    margin: 0;
 }
 .author-name-address h4{
     margin: 0;
@@ -50,18 +51,21 @@
     display: flex;
     justify-content: space-between;
     
-    background-color: #f2f4fa;
+    background-color: #000;
     padding: 15px 10px;
     border-radius: 15px;
 }
 .break-time{
-    background: #fff;
     border-radius: 50%;
     text-align: center;
     width: 40px;
     height: 40px;
+    background: black;
     line-height: 40px;
     font-weight: bolder;
+    border: solid 2px white;
+    color: white;
+    cursor: pointer;
 }
 .break-heading,
 .exercise-heading{
@@ -71,10 +75,12 @@
 .total-break-time{
     display: flex;
     justify-content: space-between;
-    background-color: #f2f4fa;
+    background-color: #000;
     padding: 15px 20px;
     border-radius: 15px;
     margin: 5px 0;
+    border: solid 3px cyan;
+    color: #fff;
 }
 .total-exercise-time h5,
 .total-break-time h5{
@@ -88,7 +94,7 @@
         width: 100%;
         border: none;
         color: #fff;
-        background-color: blue;
+        background-color: #000;
         padding: 20px 0;
         border-radius: 10px;
         font-size: 18px;

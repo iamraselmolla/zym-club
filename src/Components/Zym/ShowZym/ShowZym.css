@@ -1,3 +1,6 @@
+.zym-details{
+    border: solid 3px cyan;
+}
 .zym-details img{
     width: 100%;
     border-radius: 15px;
@@ -7,6 +10,28 @@
     border-radius: 15px;
     background-color: #fff;
 }
+.added-exercise{
+    background-color: #000;
+    color: #fff;
+    transition: all linear 0.5s;
+    transform: scale(0.9);
+    position: relative;
+}
+.added-exercise::before{
+    content: 'added';
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bolder;
+    right: -6%;
+    top: -8%;
+}
+
 .zym-details h5{
     font-weight: inherit;
     margin: 10px 0;
@@ -18,11 +43,15 @@
     width: 100%;
     border: none;
     color: #fff;
-    background-color: blue;
+    background-color: black;
     padding: 15px 0;
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+}
+.added-exercise .addlistbtn{
+    background-color: #fff;
+    color: #000;
 }
 .added-list{
     background-color: crimson;

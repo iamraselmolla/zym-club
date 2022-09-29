@@ -12,3 +12,23 @@
 .zym-info-container{
     padding: 50px 0;
 }
+@media only screen and (max-width: 912px) {
+    .zym-container{
+        grid-template-columns: 65% 35%;
+    
+    }
+    .zym-info-container{
+        padding: 30px 15px;
+        width: 95%;
+    }
+  }
+@media only screen and (max-width: 420px) {
+    .zym-container{
+        grid-template-columns: auto;
+    
+    }
+    .zym-info-container{
+        padding: 30px 15px;
+        width: 95%;
+    }
+  }
