@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
+
 const ZymAuthor = () => {
     const viewToast = () => toast('Exercise Completed', {position: toast.POSITION.TOP_CENTER})
 
