@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ShowZym.css'
-let totalTime = [];
+
+
+const ShowZym = (props) => {
+    const [times, setTime] = useState('10');
+
+    let totalTime = [];
 const calTotalTime = (getTime,e) => {
     totalTime.push(parseInt(getTime))
     const totalCalculateTime = totalTime.reduce((pre,curr) => pre + curr);
@@ -10,8 +15,7 @@ const calTotalTime = (getTime,e) => {
         e.target.textContent = 'Added';
     }
 }
-
-const ShowZym = (props) => {
+    
     const {img, name, age, description, time} = props.zym;
 let newDes;
     if(description.length>12){

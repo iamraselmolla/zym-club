@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import './ZymAuthor.css';
 
-let breakTime = 0
+
+
+
+const ZymAuthor = () => {
+
+    let [newTime, setNewTime]= useState('10');
+
+    
+    let breakTime = 0
 const showBreakTime = e => {
     if(e.target.classList.contains('break-time')){
         breakTime = e.target.innerText;
@@ -18,9 +26,6 @@ const showBreakTime = e => {
     }
 
 }
-
-
-const ZymAuthor = () => {
  
     return (
         <div className='author-info'>
