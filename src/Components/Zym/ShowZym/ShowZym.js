@@ -1,20 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ShowZym.css'
-
-let newTimeDB;
-const ShowZym = (props) => {
-    useEffect(() => {
-        const getTimeDB = localStorage.getItem('break-time');
-       
-        if(getTimeDB){
-             newTimeDB = getTimeDB.split('').slice(0,2).join('')
-        }else{
-            newTimeDB = 10
-        }
-    }, [])
-    const [times, setTime] = useState(newTimeDB);
-
-    let totalTime = [];
+let totalTime = [];
 const calTotalTime = (getTime,e) => {
     totalTime.push(parseInt(getTime))
     const totalCalculateTime = totalTime.reduce((pre,curr) => pre + curr);
@@ -24,7 +10,8 @@ const calTotalTime = (getTime,e) => {
         e.target.textContent = 'Added';
     }
 }
-    
+
+const ShowZym = (props) => {
     const {img, name, age, description, time} = props.zym;
 let newDes;
     if(description.length>12){

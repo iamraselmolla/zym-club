@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import './ZymAuthor.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 
 const ZymAuthor = () => {
 
-    let [newTime, setNewTime]= useState('10');
-
+    const getItem = localStorage.getItem('break-time');
     
+const [breakTimeNew, setbreakTime] = useState(`${getItem.slice(0,2)}`)
     let breakTime = 0
 const showBreakTime = e => {
     if(e.target.classList.contains('break-time')){
@@ -19,13 +21,15 @@ const showBreakTime = e => {
         if(getTimeFromDB){
           newTime= getTimeFromDB.split('').slice(0,2).join('')
         }
-       setNewTime(newTime);
+        setbreakTime(newTime)
+        
 
     }else{
         e.target.classList.remove('added')
     }
 
 }
+
  
     return (
         <div className='author-info'>
@@ -68,7 +72,7 @@ const showBreakTime = e => {
                 </div>
                 <div className="total-break-time">
                 <h5>Break</h5>
-                    <p><span id='break-time-seconds'>{newTime}</span> Seconds</p>
+                    <p><span id='break-time-seconds'>{breakTimeNew}</span> Seconds</p>
                 </div>
             </div>
             <button className='activity-completed-btn'>Activity Completed</button>
