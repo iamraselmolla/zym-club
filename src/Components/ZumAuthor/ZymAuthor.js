@@ -1,5 +1,23 @@
 import React, { useState } from 'react';
-import './ZymAuthor.css'
+import './ZymAuthor.css';
+
+let breakTime = 0
+const showBreakTime = e => {
+    if(e.target.classList.contains('break-time')){
+        breakTime = e.target.innerText;
+        localStorage.setItem('break-time', breakTime);
+        const getTimeFromDB = (localStorage.getItem('break-time'))
+        let  newTime;
+        if(getTimeFromDB){
+          newTime= getTimeFromDB.split('').slice(0,2).join('')
+        }
+        document.getElementById('break-time-seconds').innerText = newTime;
+
+    }else{
+        e.target.classList.remove('added')
+    }
+
+}
 
 
 const ZymAuthor = () => {
@@ -32,7 +50,7 @@ const ZymAuthor = () => {
                     Add a break
                 </h4>
                 <div className="break">
-                    <span className="break-time">10s</span><span className="break-time">20s</span><span className="break-time">20s</span><span className="break-time">40s</span><span className="break-time">50s</span>
+                    <span onClick={(e) => showBreakTime(e)} className="break-time">10s</span><span onClick={(e) => showBreakTime(e)} className="break-time">20s</span><span onClick={(e) => showBreakTime(e)} className="break-time">30s</span><span onClick={(e) => showBreakTime(e)} className="break-time">40s</span><span onClick={(e) => showBreakTime(e)} className="break-time">50s</span>
                 </div>
             </div>
             <div className="exercise-details">
@@ -45,7 +63,7 @@ const ZymAuthor = () => {
                 </div>
                 <div className="total-break-time">
                 <h5>Break</h5>
-                    <p><span>15</span> Seconds</p>
+                    <p><span id='break-time-seconds'></span> Seconds</p>
                 </div>
             </div>
             <button className='activity-completed-btn'>Activity Completed</button>
@@ -53,5 +71,6 @@ const ZymAuthor = () => {
         
     );
 };
+
 
 export default ZymAuthor;
