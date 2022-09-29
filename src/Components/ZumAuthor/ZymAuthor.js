@@ -5,12 +5,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-
 const ZymAuthor = () => {
+    const viewToast = () => toast('Hello', {position: toast.POSITION.TOP_CENTER})
 
-    const getItem = localStorage.getItem('break-time');
+
+    let getItem = localStorage.getItem('break-time');
+    if(!getItem){
+        getItem = "50";
+    }
     
-const [breakTimeNew, setbreakTime] = useState(`${getItem.slice(0,2)}`)
+const [breakTimeNew, setbreakTime] = useState(`${getItem.slice(0,2)}`);
+
+    
     let breakTime = 0
 const showBreakTime = e => {
     if(e.target.classList.contains('break-time')){
@@ -23,14 +29,9 @@ const showBreakTime = e => {
         }
         setbreakTime(newTime)
         
-
-    }else{
-        e.target.classList.remove('added')
     }
 
 }
-
- 
     return (
         <div className='author-info'>
             <div className="author-details flex">
@@ -75,7 +76,9 @@ const showBreakTime = e => {
                     <p><span id='break-time-seconds'>{breakTimeNew}</span> Seconds</p>
                 </div>
             </div>
-            <button className='activity-completed-btn'>Activity Completed</button>
+            <button onClick={viewToast} className='activity-completed-btn'>Activity Completed</button>
+            <ToastContainer />
+
         </div>
         
     );

@@ -1,17 +1,18 @@
 import React from 'react';
 import './ShowZym.css'
 let totalTime = [];
-const calTotalTime = (getTime,e) => {
-    totalTime.push(parseInt(getTime))
-    const totalCalculateTime = totalTime.reduce((pre,curr) => pre + curr);
 
-    document.getElementById('exercise-time').textContent = totalCalculateTime;
-    if(e.target.classList.contains('addlistbtn')){
-        e.target.textContent = 'Added';
-    }
-}
 
 const ShowZym = (props) => {
+    const calTotalTime = (getTime,e) => {
+        totalTime.push(parseInt(getTime))
+        const totalCalculateTime = totalTime.reduce((pre,curr) => pre + curr);
+    
+        document.getElementById('exercise-time').textContent = totalCalculateTime;
+        if(e.target.classList.contains('addlistbtn')){
+            e.target.textContent = 'Added';
+        }
+    }
     const {img, name, age, description, time} = props.zym;
 let newDes;
     if(description.length>12){
