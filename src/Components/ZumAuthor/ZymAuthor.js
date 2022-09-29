@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import './ZymAuthor.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
-
-
 const ZymAuthor = () => {
     const viewToast = () => toast('Exercise Completed', {position: toast.POSITION.TOP_CENTER})
 
